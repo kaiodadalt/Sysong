@@ -1,0 +1,12 @@
+.input-field input:focus + label {
+   color: orange !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid orange !important;
+   box-shadow: 0 1px 0 0 orange !important
+ }
+ 
+ .slider .indicators .indicator-item.active {
+    background-color: orange;
+}
