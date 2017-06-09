@@ -11,7 +11,7 @@ import rest.Depoimentos;
 import rest.Ongs;
 import rest.Projetos;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-06-05T22:36:39")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-06-08T18:58:47")
 @StaticMetamodel(Imagens.class)
 public class Imagens_ { 
 

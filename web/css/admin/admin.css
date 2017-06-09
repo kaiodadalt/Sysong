@@ -1,0 +1,23 @@
+@media only screen and (min-width: 992px)  {
+    .brand-logo{
+        margin-left: 80px;
+    }
+    .row.valign-wrapper{
+        
+        margin-top: 10px;
+        margin-right: 80px;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px)  {
+    .brand-logo{
+        margin-left: 80px;
+    }
+    .row.valign-wrapper{
+        
+        margin-top: 10px;
+        margin-right: 80px;
+        padding-left: 20px;
+    }
+}

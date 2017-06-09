@@ -10,7 +10,7 @@ import rest.Mapa;
 import rest.ObjetivosProjeto;
 import rest.Ongs;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-06-05T22:36:39")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2017-06-08T18:58:47")
 @StaticMetamodel(Projetos.class)
 public class Projetos_ { 
 
