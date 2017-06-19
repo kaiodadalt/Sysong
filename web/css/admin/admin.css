@@ -21,3 +21,31 @@
         padding-left: 20px;
     }
 }
+
+.loader {
+    position: absolute;
+    top :0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+body{
+    overflow-y:scroll;
+}
+
+.input-field input:focus + label, .input-field textarea:focus + label {
+   color: orange !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus, .row .input-field textarea:focus {
+   border-bottom: 1px solid orange !important;
+   box-shadow: 0 1px 0 0 orange !important
+ }
+ 
+ .slider .indicators .indicator-item.active {
+    background-color: orange;
+}
+.material-icons.prefix.active{
+    color:orange;
+}
