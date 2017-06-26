@@ -35,9 +35,9 @@
               <a href="#!email"><span class="white-text email">kaiofreitas.dadalton@gmail.com</span></a>
               <a href="#!name"><span class="white-text name" style="margin-top: 0px"> <i class="tiny material-icons">power_settings_new</i>Logout</span></a>
             </div></li>
-            <li><a class="waves-effect" href="#!">Geral</a></li>
-            <li><a class="waves-effect" href="#!">Home</a></li>
-            <li><a class="waves-effect" href="#!">Projetos</a></li>
+            <li><a class="waves-effect" href="#">Geral</a></li>
+            <li><a class="waves-effect" href="home.html">Home</a></li>
+            <li><a class="waves-effect" href="projetos.html">Projetos</a></li>
             <li><a class="waves-effect" href="#!">Blog</a></li>
             <li><a class="waves-effect waves-light btn orange">Ver online</a></li>
         </ul>
@@ -47,8 +47,8 @@
               <a href="admin.html" class="brand-logo"><img class="responsive-img" src="images/logo.png" style="max-height: 65px"></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="geral.html">Geral</a></li>
-                <li><a href="badges.html">Home</a></li>
-                <li><a href="collapsible.html">Projetos</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
                 <li><a href="collapsible.html">Blog</a></li>
                 <li><a  href="collapsible.html" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="material-icons">power_settings_new</i></a></li>
                 <li><a style="margin-right: 10px;" class="waves-effect waves-light btn orange">Ver online</a></li>
@@ -66,6 +66,15 @@
             <div class="col s12 m2 l3">
             </div>
             <form class="col s12 m8 l6 center">
+                <div class="file-field input-field">
+                            <div class="btn orange">
+                                <span>LOGO</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Selecione a logo">
+                            </div>
+                        </div>
                 <div class="input-field">
                     <i class="material-icons prefix">assignment_ind</i>
                     <input placeholder="Digite o nome da ONG" id="icon_prefix" type="text" class="validate">
@@ -92,6 +101,16 @@
                     <label for="icon_telephone">Telephone</label>
                 </div>
                 <div class="input-field">
+                    <i class="material-icons prefix">remove</i>
+                    <input placeholder="Cole o link do Facebook" id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Facebook</label>
+                </div>
+                <div class="input-field">
+                    <i class="material-icons prefix">remove</i>
+                    <input placeholder="Cole o link do Instagram" id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Instagram</label>
+                </div>
+                <div class="input-field">
                     <i class="material-icons prefix">location_on</i>
                     <textarea placeholder="Cole o iframe do Google Maps" id="textarea1" class="materialize-textarea"></textarea>
                     <label for="textarea1">Mapa</label>
@@ -101,7 +120,7 @@
             </div>
         </div>
         <div class="row center">
-            <a class="waves-effect waves-light btn orange">Salvar</a>
+            <a class="waves-effect waves-light btn orange" onclick="Admin.GeralSave()">Salvar</a>
         </div>
         <footer class="page-footer green darken-4">
             <div class="container">

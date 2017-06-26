@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Sysong</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/admin/admin.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+</head>
+<body>
+    <div class="preloader-wrapper big active loader">
+        <div class="spinner-layer spinner-green-only">
+            <div class="circle-clipper left">
+                <div class="circle"></div>
+            </div><div class="gap-patch">
+                <div class="circle"></div>
+            </div><div class="circle-clipper right">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+    <div id="all" style="display: none">
+        <ul id="slide-out" class="side-nav">
+            <li><div class="userView">
+              <div class="background">
+                <img src="images/bg-admin-menu.jpg">
+              </div>
+              <a href="#!user"><img class="circle" src="images/user.jpg"></a>
+              <a href="#!name"><span class="white-text name">Kaio Freitas</span></a>
+              <a href="#!email"><span class="white-text email">kaiofreitas.dadalton@gmail.com</span></a>
+              <a href="#!name"><span class="white-text name" style="margin-top: 0px"> <i class="tiny material-icons">power_settings_new</i>Logout</span></a>
+            </div></li>
+            <li><a class="waves-effect" href="#!">Geral</a></li>
+            <li><a class="waves-effect" href="#!">Home</a></li>
+            <li><a class="waves-effect" href="#!">Projetos</a></li>
+            <li><a class="waves-effect" href="#!">Blog</a></li>
+            <li><a class="waves-effect waves-light btn orange">Ver online</a></li>
+        </ul>
+        <nav>
+            <div class="nav-wrapper green darken-4">
+              <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+              <a href="admin.html" class="brand-logo"><img class="responsive-img" src="images/logo.png" style="max-height: 65px"></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="geral.html">Geral</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="collapsible.html">Blog</a></li>
+                <li><a  href="collapsible.html" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Logout"><i class="material-icons">power_settings_new</i></a></li>
+                <li><a style="margin-right: 10px;" class="waves-effect waves-light btn orange">Ver online</a></li>
+              </ul>
+            </div>
+        </nav>
+        
+        <div class="row">
+            <div class="col s12">
+                <br>
+                <h5 class="header light center">Home</h5>
+            </div>
+        </div>
+        <div class="row">
+            <ul id="tabs-swipe-demo" class="tabs hide-on-small-only">
+                <div class="tab col s2"> </div>
+                <li class="tab col s2"><a class="active" href="#test-swipe-1">Inicio</a></li>
+                <li class="tab col s2"><a href="#test-swipe-2">Quem somos</a></li>
+                <li class="tab col s2"><a href="#test-swipe-3">Depoimentos</a></li>
+                <li class="tab col s2"><a href="#test-swipe-4">Doações</a></li>
+                <div class="indicator" style="right: 900px; left: 224px;"></div>
+                <div class="tab col s2"> </div>
+            </ul>
+            <ul id="tabs-swipe-demo" class="tabs hide-on-med-and-up">
+                <div class="tab col s2"> </div>
+                <li class="tab col s2"><a class="active" href="#test-swipe-1"><i class="material-icons">view_day</i></a></li>
+                <li class="tab col s2"><a href="#test-swipe-2"><i class="material-icons">person</i></a></li>
+                <li class="tab col s2"><a href="#test-swipe-3"><i class="material-icons">comment</i></a></li>
+                <li class="tab col s2"><a href="#test-swipe-4"><i class="material-icons">monetization_on</i></a></li>
+                <div class="tab col s2"> </div>
+            </ul>
+            <div id="test-swipe-1" class="col s12">
+                <div class="row">
+                    <br><br>
+                    <div class="col s12 m2 l3">
+                    </div>
+                    <form class="col s12 m8 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">reorder</i>
+                            <textarea placeholder="Digite uma frase que chama atenção para a causa que a sua ONG apoia" id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Texto</label>
+                        </div>
+                        <div class="row center">
+                            <a class="waves-effect waves-light btn orange" onclick="Admin.GeralSave()">Salvar</a>
+                        </div>
+                        <h5 class="left-align">Banner</h5>
+                        <p>Adicione imagens criativas e de alta qualidade que transmitam uma idéia que a ONG apoia.</p>
+                        <div class="file-field input-field col l11">
+                            <div class="btn green darken-4 col l1">
+                                <i class="material-icons">photo</i>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Selecione uma imagem">
+                            </div>
+                        </div>
+                        <div class="btn green darken-4 right col l1" style="height: 3rem;line-height: 3rem;margin-top: 15px">
+                            <i class="material-icons">add</i>
+                        </div>
+                        <table class="highlight centered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Arquivo</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="col s12 m2 l3">
+                    </div>
+                </div>
+            </div>
+            <div id="test-swipe-2" class="col s12">
+                <div class="row">
+                    <br><br>
+                    <div class="col s12 m2 l3">
+                    </div>
+                    <form class="col s12 m8 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">reorder</i>
+                            <textarea placeholder="Digite o texto que será exibido na sessão 'Quem somos'" id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Texto</label>
+                        </div>
+                        <div class="row center">
+                            <a class="waves-effect waves-light btn orange" onclick="Admin.GeralSave()">Salvar</a>
+                        </div>
+                        <h5 class="left-align">Galeria</h5>
+                        <p>Adicione imagens reais de atividades realizadas pela ONG.</p>
+                        <div class="file-field input-field col l11">
+                            <div class="btn green darken-4 col l1">
+                                <i class="material-icons">photo</i>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Selecione uma imagem">
+                            </div>
+                        </div>
+                        <div class="btn green darken-4 right col l1" style="height: 3rem;line-height: 3rem;margin-top: 15px">
+                            <i class="material-icons">add</i>
+                        </div>
+                        <table class="highlight centered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Arquivo</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </form>
+                    <div class="col s12 m2 l3">
+                    </div>
+                </div>
+            </div>
+            <div id="test-swipe-3" class="col s12">
+                <div class="row">
+                    <br><br>
+                    <div class="col s12 m2 l3">
+                    </div>
+                    <form id="form" class="col s12 m8 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate" placeholder="Digite o nome">
+                            <label for="icon_prefix">Nome</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">perm_identity</i>
+                            <select id="conocio" name="conocio">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="Google" data-icon="images/user.png">Beneficiado</option>
+                                <option value="Bing" data-icon="images/user.png">Voluntário</option>
+                                <option value="Yahoo" data-icon="images/user.png">Patrocinador</option>
+                            </select>
+                            <label for="icon_prefix">Tipo</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">reorder</i>
+                            <textarea placeholder="Digite o comentário" id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Comentário</label>
+                        </div>
+                        
+                        <div class="row center">
+                            <a class="waves-effect waves-light btn orange" onclick="Admin.GeralSave()">Adicionar</a>
+                        </div>
+                        <h5 class="left-align">Comentários</h5>
+                        <table class="highlight centered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nome</th>
+                                    <th>Tipo</th>
+                                    <th>Comentário</th>
+                                    <th>Excluir</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>teste.png</td>
+                                    <td>teste.png</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>teste.png</td>
+                                    <td>teste.png</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>teste.png</td>
+                                    <td>teste.png</td>
+                                    <td>teste.png</td>
+                                    <td><a href="#"><i class="material-icons icon-red">delete_forever</i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                    <div class="col s12 m2 l3">
+                    </div>
+                </div>
+            </div>
+            <div id="test-swipe-4" class="col s12">
+                <div class="row">
+                    <br><br>
+                    <div class="col s12 m2 l3">
+                    </div>
+                    <folrm id="form" class="col s12 m8 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">reorder</i>
+                            <textarea placeholder="Digite o texto da sessão 'Doação'" id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Texto</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">monetization_on</i>
+                            <textarea placeholder="Cole o link do botão gerado no PayPal" id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Botão</label>
+                        </div>
+                        <div class="file-field input-field">
+                            <div class="btn orange">
+                                <span>Imagem</span>
+                                <input type="file">
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Selecione uma imagem">
+                            </div>
+                        </div>
+                        <br><br>
+                        <div class="row center">
+                            <a class="waves-effect waves-light btn orange" onclick="Admin.GeralSave()">Salvar</a>
+                        </div>
+                    </form>
+                    <div class="col s12 m2 l3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer green darken-4">
+            <div class="container">
+              <div class="row">
+                <div class="col l6 s12">
+                  <h5 class="white-text">Desenvolvido por</h5>
+                  <p class="grey-text text-lighten-4">Eduardo, Jean e Kaio.</p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright">
+              <div class="container">© 2017 Sysong</div>
+            </div>
+        </footer>
+    </div>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/admin.js"></script>
+    <script>Admin.init();</script>
+</body>
+</html>

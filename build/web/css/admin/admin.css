@@ -32,6 +32,11 @@
 }
 body{
     overflow-y:scroll;
+/*    background-image: url("../../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;*/
 }
 
 .input-field input:focus + label, .input-field textarea:focus + label {
@@ -48,4 +53,27 @@ body{
 }
 .material-icons.prefix.active{
     color:orange;
+}
+
+.tabs .indicator {
+    background-color: orange;
+}
+.tabs .tab a.active {
+    color:orange;
+    font-weight: 500;
+}
+.tabs .tab a.active:hover {
+    color:orange;
+}
+.tabs .tab a {
+    color:green;
+}
+.tabs .tab a:hover{
+    color:#1B5E20;
+}
+.icon-red{
+    color:#AC0F09;
+}
+.dropdown-content li span{
+    color: #1B5E20;
 }
